@@ -29,7 +29,6 @@ WORKDIR /usr/local/stario
 
 # Clone the repo
 COPY . .
-RUN git fetch --all
 
 # Setup local.properties file pointing to Android SDK
 RUN echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
